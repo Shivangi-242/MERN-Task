@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task Six</title>
+    <style>
+      table {
+        font-family: "Arial", sans-serif;
+        border-collapse: collapse;
+        width: 60%;
+        margin: 10% auto;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      td {
+        padding: 5px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+      }
+
+      input[type="button"] {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        background-color: rgb(76, 176, 80);
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+      }
+
+      input[type="button"][value="Cancel"] {
+        background-color: rgb(241, 67, 53);
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      tr:last-child {
+        background-color: rgb(241, 241, 241);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <center>
+        <table>
+          <tr>
+            <td colspan="2">
+              <img src="profile.png" alt="Image" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><label>Username</label></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="text" placeholder="Enter Username" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><label>Password</label></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="password" placeholder="Enter Password" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><input type="button" value="Login" /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><input type="checkbox" />Remember me</td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="button" value="Cancel" />
+            </td>
+            <td style="text-align: right"><a href="#">Forgot Password</a></td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

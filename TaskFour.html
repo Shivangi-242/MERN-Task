@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form>
+      <center>
+        <table>
+          <caption>
+            Registration Form
+          </caption>
+
+          <!-- Fullname -->
+          <tr>
+            <td><label for="fullname">Fullname:</label></td>
+            <td>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Enter your fullname"
+                id="fullname"
+              />
+            </td>
+          </tr>
+
+          <!-- Username -->
+          <tr>
+            <td><label for="username">Username:</label></td>
+            <td>
+              <input
+                type="text"
+                name="username"
+                placeholder="Enter your username"
+                id="username"
+              />
+            </td>
+          </tr>
+
+          <!-- Password -->
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password" /></td>
+          </tr>
+
+          <!-- Repeat Password -->
+          <tr>
+            <td><label for="repassword">Repeat Password:</label></td>
+            <td><input type="password" name="repass" id="repass" /></td>
+          </tr>
+
+          <!-- Address -->
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td>
+              <textarea
+                name="address"
+                id="address"
+                rows="4"
+                placeholder="Enter your address"
+              ></textarea>
+            </td>
+          </tr>
+
+          <!-- Age -->
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td><input type="number" name="age" id="age" /></td>
+          </tr>
+
+          <!-- Gender -->
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <select name="gender" id="gender">
+                <option>--Select--</option>
+                <option value="gender">Female</option>
+                <option value="gender">Male</option>
+                <option value="gender">Others</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Save button -->
+          <tr>
+            <td><input type="button" value="Save" /></td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

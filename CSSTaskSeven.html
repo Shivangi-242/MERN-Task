@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Task Seven</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: rgb(162, 43, 85);
+        color: white;
+      }
+      table {
+        background-color: rgb(117, 32, 63);
+        padding: 30px 50px;
+        margin: 20%;
+      }
+
+      td {
+        padding: 8px;
+      }
+
+      button {
+        background-color: white;
+        border-radius: 5px;
+        width: 100%;
+        height: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <center>
+        <table>
+          <tr>
+            <td><label>Name:</label></td>
+            <td><input type="text" placeholder="Your Name" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Email:</label></td>
+            <td><input type="email" placeholder="Your Email" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" placeholder="Your Password" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Phone Number:</label></td>
+            <td>
+              <input type="tel" placeholder="Your Phone Number" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Gender:</label></td>
+            <td>
+              <label>
+                <input type="radio" name="gender" value="male" /> Male
+              </label>
+              <label>
+                <input type="radio" name="gender" value="female" /> Female
+              </label>
+              <label>
+                <input type="radio" name="gender" value="other" /> Other
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Language:</label></td>
+            <td>
+              <select>
+                <option>Select language</option>
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Zip Code:</label></td>
+            <td>
+              <input type="number" placeholder="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>About:</label></td>
+            <td>
+              <textarea
+                rows="2"
+                placeholder="Write about yourself..."
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" value="Register">
+                <big><b>Register</b></big>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </form>
+  </body>
+</html>

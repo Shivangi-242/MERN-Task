@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form>
+      <center>
+        <table border="1" bordercolor="black" cellspacing="0" cellpadding="4">
+          <caption>
+            <big><b>Registration Form</b></big>
+          </caption>
+
+          <!--FirstName-->
+          <tr>
+            <td><label for="FirstName">First Name </label></td>
+            <td>
+              <input type="text" placeholder="Enter your First Name" />
+            </td>
+          </tr>
+
+          <!--LastName-->
+          <tr>
+            <td><label for="LastName">Last Name </label></td>
+            <td>
+              <input type="text" placeholder="Enter your lastName" />
+            </td>
+          </tr>
+
+          <!--Email-->
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input type="email" placeholder="Enter your email" />
+            </td>
+          </tr>
+
+          <!--Password-->
+          <tr>
+            <td><label for="password">Password</label></td>
+            <td>
+              <input type="password" placeholder="Enter your password" />
+            </td>
+          </tr>
+
+          <!--ReenterPassword-->
+          <tr>
+            <td><label for="reenterPassword">Re-enter password</label></td>
+            <td>
+              <input type="password" placeholder="Re-enter password" />
+            </td>
+          </tr>
+
+          <!--Gender-->
+          <tr>
+            <td rowspan="2"><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="male" id="male" />
+              <label for="male">Male</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="gender" value="female" id="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+          <!--Age-->
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td>
+              <input type="number" placeholder="Enter your Age" />
+            </td>
+          </tr>
+
+          <!--Phno-->
+          <tr>
+            <td><label for="phoneNumber">Phone Number</label></td>
+            <td>
+              <input type="tel" placeholder="Enter your Phone Number" />
+            </td>
+          </tr>
+
+          <!--Address-->
+          <tr>
+            <td><label for="address">Address</label></td>
+            <td>
+              <textarea
+                name="address"
+                rows="4"
+                placeholder="Enter your address"
+              ></textarea>
+            </td>
+          </tr>
+
+          <!--State-->
+          <tr>
+            <td><label for="state">State</label></td>
+            <td>
+              <input type="text" placeholder="State" />
+            </td>
+          </tr>
+
+          <!--Country-->
+          <tr>
+            <td><label for="country">Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option value="">Select a Country</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Japan">Japan</option>
+                <option value="China">China</option>
+                <option value="South Korea">South Korea</option>
+              </select>
+            </td>
+          </tr>
+
+          <!--Languages-->
+          <tr>
+            <td><label>Languages Known:</label></td>
+            <td>
+              <input
+                type="checkbox"
+                id="english"
+                name="languagesKnown"
+                value="English"
+              />
+              <label for="english">English</label>
+              <input
+                type="checkbox"
+                id="kannada"
+                name="languagesKnown"
+                value="Kannada"
+              />
+              <label for="kannada">Kannada</label>
+              <input
+                type="checkbox"
+                id="hindi"
+                name="languagesKnown"
+                value="Hindi"
+              />
+              <label for="hindi">Hindi</label>
+              <input
+                type="checkbox"
+                id="telugu"
+                name="languagesKnown"
+                value="Telugu"
+              />
+              <label for="telugu">Telugu</label>
+            </td>
+          </tr>
+
+          <!--Declare-->
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" id="declare" name="declaration" />Hereby
+              declare all the given details are true
+            </td>
+          </tr>
+
+          <!--Login-->
+          <tr>
+            <td colspan="2" style="text-align: right">
+              Log in to the <a href="https://www.example.com">Ethnus</a> website
+            </td>
+          </tr>
+        </table>
+        <button type="submit" value="Register">Register</button>
+      </center>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .v-menu {
+        width: 200px;
+      }
+
+      .v-menu a {
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: blue;
+        background-color: rgb(152, 215, 254);
+        border-bottom: 1px solid white;
+      }
+
+      .v-menu a.active {
+        background-color: orange;
+        color: white;
+      }
+
+      .v-menu a:hover {
+        background-color: darkblue;
+        color: white;
+      }
+
+      /*HORIZONTAL MENU*/
+
+      .h-menu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        background-color: black;
+      }
+
+      .h-menu li {
+        flex-grow: 1;
+      }
+
+      .h-menu a {
+        display: block;
+        padding: 12px;
+        text-align: center;
+        text-decoration: none;
+        color: blue;
+        background-color: rgb(209, 211, 213);
+      }
+
+      .h-menu a.active {
+        background-color: black;
+        color: white;
+      }
+
+      .h-menu a:hover {
+        background-color: darkgray;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="v-menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Java</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">Bootstrap</a>
+    </div>
+
+    <ul class="h-menu">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Bootstrap</a></li>
+    </ul>
+  </body>
+</html>
